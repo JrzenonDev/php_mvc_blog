@@ -1,7 +1,7 @@
 <?php
   function call($controller, $action) {
     // require the file that matches the controller name
-    require_once('controllers/' . $controller . '_controller.php');
+    require_once(__DIR__.'/controllers/' . $controller . '_controller.php');
 
     // create a new instance of the needed controller
     switch($controller) {
